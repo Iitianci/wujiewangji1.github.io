@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>其实呢</title>
+    <script>
+        window.onload=function(){
+            var story = document.getElementById('word');
+            var s = document.getElementById('show');
+            var i = 0;
+            timer=setInterval(function(){
+                s.innerHTML=story.innerHTML.substring(0,i);
+                i++;
+                if(s.innerHTML==story.innerHTML){
+                    clearInterval(timer);
+                }
+            },200);
+        }
+    </script>
+</head>
+<body>
+    <iframe src="https://i.y.qq.com/v8/playsong.html?songid=213820965&source=yqq#wechat_redirect"></iframe>
+    <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+            src="https://i.y.qq.com/v8/playsong.html?songid=214097017&source=yqq#wechat_redirect">
+      你的浏览器不支持audio标签
+</audio>
+    <span style="color: green">时间太匆忙，来不及解释，请骚等几秒。。。</span>
+    <br/>
+    <p id="word" style="display:none;"><font face="宋体"  size="15" color="red">
+        农村刚刚通网，不好意思<br/>
+        最近琐事繁多，没空回复<br/>
+        你所做的相册，非常用心<br/>
+        白让你担心那么久了<br/>
+        你用不着想那么多的<br/>
+        像我这样的人啊<br/>
+        怎么会想不开呢<br/>
+        当然会好好活着<br/>
+        然后会好好学习<br/>
+        若多有打扰之处<br/>
+        敬请原谅<br/>
+        第一次嘛<br/>
+        重在参与<br/>
+        积累经验<br/>
+        别想太多<br/>
+        最后祝你<br/>
+        诸事顺利<br/>
+        诸事大吉<br/>
+        除夕快乐<br/>
+        新春快乐<br/>
+
+    </font></p>
+    <p id="show"></p>
+</body>
+</html>
